@@ -3,13 +3,13 @@ import { LOGIN_ROUTE } from "../util/const";
 import { useContext } from "react";
 import { Context } from "..";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { NavLink } from "react-router-dom";
 //Materail UI
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const { auth } = useContext(Context);
