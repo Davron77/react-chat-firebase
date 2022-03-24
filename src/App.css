@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Components */
+/* Login */
+.login {
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.login__Box {
+  background-color: lightgray;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navbar */
+.Navbar__btn {
+  background-color: white !important;
+  color: #00b0ff !important;
+}
