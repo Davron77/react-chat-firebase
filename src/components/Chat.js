@@ -1,4 +1,5 @@
-import { Avatar, Button, Container, Grid, TextField } from "@mui/material";
+import { Avatar, Container, Grid, TextField } from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
 import React, { useContext, useState } from "react";
 import { Context } from "..";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -38,9 +39,8 @@ function Chat() {
               style={{
                 margin: "10px",
                 backgroundColor:
-                  user.uid === message.uid
-                    ? "rgba(255, 255, 255, 0.7)"
-                    : "rgba(228, 83, 167, 0.549)",
+                  user.uid === message.uid ? "#F5F5F5" : "#435F7A",
+                color: user.uid === message.uid ? "#32465A" : "#F5F5F5",
                 marginLeft: user.uid === message.uid ? "auto" : "10px",
                 width: "40%",
                 padding: 5,
@@ -62,7 +62,7 @@ function Chat() {
             </div>
           ))}
         </div>
-        <Grid container className="chat__mainInput">
+        <div container className="chat__mainInput">
           <TextField
             placeholder="Message"
             fullWidth
@@ -71,10 +71,10 @@ function Chat() {
             onChange={(e) => setValue(e.target.value)}
             className="chat__input"
           />
-          <Button onClick={sendMessage} className="chat__mainBtn">
+          <SendIcon onClick={sendMessage} className="chat__mainBtn">
             Send Message
-          </Button>
-        </Grid>
+          </SendIcon>
+        </div>
       </Grid>
     </Container>
   );

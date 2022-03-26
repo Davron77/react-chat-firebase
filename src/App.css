@@ -25,7 +25,7 @@ body {
 /* Navbar */
 .Navbar__btn {
   background-color: white !important;
-  color: #00b0ff !important;
+  color: #435f7a !important;
 }
 
 /* Chat */
@@ -40,28 +40,21 @@ body {
   height: 60vh;
   border: 1px solid gray;
   overflow-x: auto;
-  background: #283048; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #859398,
-    #283048
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #859398,
-    #283048
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #b3b5b5;
 }
 
 .chat__mainInput {
+  display: flex;
   direction: column !important;
   align-items: flex-end !important;
   width: 80%;
 }
 
 .chat__mainBtn {
-  background-color: green !important;
+  background-color: #00b0ff !important;
   color: white !important;
+  width: 56px !important;
+  height: 56px !important;
 }
 
 .chat__input {
